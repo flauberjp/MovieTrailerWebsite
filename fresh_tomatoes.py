@@ -73,7 +73,7 @@ main_page_head = '''
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            var sourceUrl = 'https://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
@@ -175,7 +175,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('myTop10Movies.html', 'w')
+    output_file = open('index.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(

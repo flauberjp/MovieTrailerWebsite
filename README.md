@@ -1,6 +1,6 @@
 Website that shows information of my favorite movies like title, sinopse, poster, trailer, and etc.
 
-The site consistis of just one file myTop10Movies.html, you can download it and open it on your browser.
+The site consistis of just one file index.html, you can either access it from  https://flauberjp.github.io/MovieTrailerWebsite/ or download and open it on your browser.
 
 Demonstration:
 

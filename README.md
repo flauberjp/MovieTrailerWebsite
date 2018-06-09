@@ -1,9 +1,10 @@
 Website that shows information of my favorite movies like title, sinopse, poster, trailer, and etc.
 
-[Demonstration available](https://youtu.be/pdK3M_QeDr4)
-
-
 The site consistis of just one file myTop10Movies.html, you can download it and open it on your browser.
+
+Demonstration:
+
+[![Demonstration available](https://i.ytimg.com/vi/pdK3M_QeDr4/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLACV1CUodw0wju28A1PaaJr38dQkA)](https://youtu.be/pdK3M_QeDr4)
 
 If you want to see the logic, the files are available, if you want to see how that .html file was generated do the procedure below:
 

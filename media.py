@@ -1,5 +1,6 @@
 import webbrowser
 
+
 class Video():
     """ Contains details of a video. """
     def __init__(self,
@@ -9,9 +10,11 @@ class Video():
         self.duration = video_duration
 
     def show_info(self):
+        """ Print the title and duration of the video. """
         print("Title - " + self.title)
         print("Duration - " + str(self.duration))
-        
+
+
 class Movie(Video):
     """ Contains details of a movie. """
     def __init__(self,
@@ -23,12 +26,17 @@ class Movie(Video):
         Video.__init__(self, movie_title, movie_duration)
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
-        self.trailer_youtube_url = youtube_trailer        
+        self.trailer_youtube_url = youtube_trailer
 
     def show_trailer(self):
+        """ Opens the URL of the video on default browser. """
         webbrowser.open(self.trailer_youtube_url)
 
     def show_info(self):
+        """ 
+        Print the title, duration, storyline, the link of the poster, and
+        the link of the trailer of the video. 
+        """
         print("Title - " + self.title)
         print("Duration - " + str(self.duration) + "s")
         print("storyline - " + self.storyline)
@@ -37,5 +45,3 @@ class Movie(Video):
 
 
 print(Movie.__module__)
-        
-        

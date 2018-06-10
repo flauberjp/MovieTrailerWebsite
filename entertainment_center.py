@@ -94,7 +94,7 @@ the_last_of_mohicans = media.Movie(
     "Indian War.",
     "http://www.mubis.es/media/users/8232/58254/" +
     "el-ultimo-mohicano-para-cuando-original.jpg",
-    "https://www.youtube.com/watch?v=IAqLKlxY3Eo")
+    "https://www.youtube.com/watch?v=dn7UHJLcPp4")
 
 the_lord_of_the_rings = media.Movie(
     "The Lord of the Rings",
@@ -104,7 +104,7 @@ the_lord_of_the_rings = media.Movie(
     "an epic quest to the Cracks of Doom in order to destroy it.",
     "https://wtfbabe.files.wordpress.com/2012/09/" +
     "the-lord-of-the-rings-fellowship-of-the-rings.jpg",
-    "https://www.youtube.com/watch?v=dn7UHJLcPp4")
+    "https://www.youtube.com/watch?v=Pki6jbSbXIY")
 
 movies = [john_wick, avatar, the_300_spartans, gattaca, matrix, the_godfather,
           braveheart, rocky, the_last_of_mohicans, the_lord_of_the_rings]

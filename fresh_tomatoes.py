@@ -9,7 +9,7 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Flauber's Top 10 Movies!</title>
+    <title>Get to know .NET_PB people</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -81,7 +81,6 @@ main_page_head = '''
               'frameborder': 0
             }));
             $("#movie-title-container").empty().append($(this).attr('data-movie-title'));
-            $("#movie-storyline-container").empty().append($(this).attr('data-movie-storyline'));
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -107,7 +106,7 @@ main_page_content = '''
                 </h4>
             </div>
             <div class="modal-body">
-                <div id="movie-storyline-container"></div>
+                
             </div>
 
           <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
@@ -127,7 +126,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Flauber's Top 10 Movies!</a>
+            <a class="navbar-brand" href="#">Get to know .NET_PB people</a>
           </div>
         </div>
       </div>
@@ -144,7 +143,6 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 movie-tile text-center" 
     data-movie-title="{movie_title}"
-    data-movie-storyline="{movi_storyline}"
     data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img  src="{poster_image_url}" width="180" height="279">
 </div>
@@ -175,7 +173,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('index.html', 'w')
+    output_file = open('../../dotnetpb.github.io/getToKnowDotNetPeopleEpisodesListView.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
